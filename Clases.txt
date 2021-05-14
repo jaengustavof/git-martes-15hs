@@ -1,0 +1,62 @@
+Clase 1 - 1.03.27
+
+
+GIT es un grafo dirigido aciclico
+
+Dirigido - porque cada una de las aristas apunta a un lado
+
+Nodos (vertices)
+Aristas
+
+GIT Registra cambios
+Se divide en 3 areas
+
+working directory - Donde se crean los archovos html, css y js
+Staging area(INDEX) - Donde se registran los archivos anteriores ya trabajados (aqui se hace el seguimiento)
+repository - Una vez realizado el seguimiento, lo guardamos en el repository
+
+
+COMANDOS-
+
+clear - limpua
+cd documents/ -abre carpeta document
+cd .. - sale de la carpeta
+dir -muestra los directorios
+ls - muestra una lista de los archivos con colores para difegrencia su tipo
+mkdir - crea carpeta desde la consola
+rm -rf .git -> elimina la carpeta .git (remove /read and Force/ nombre carpeta)
+
+git init - Inicia un repositorio
+git status - muestra el estado del repositorio	
+
+<---------------------------------------------------------------------------->
+git config -> para configurar git (cambiar el editor de codigo por ejemplo)
+git config --global user .name "Gustavo Jaen" -> configuracion global
+git config  user .name "Gustavo Jaen" -> configuracion para un solo proyecto
+git config --global user.email "jaengustavof@gmail.com" ->Configuramos el email
+
+Una vez tengamos todos lo anterior configurado podremos utilizar el commit
+<---------------------------------------------------------------------------->
+
+vim - comando para el editor de texto de git
+vim index.html - crea el archivo index o abre el archivo index
+git add -> captura el codigo que hayamos trabajado al mmomento
+git commit -a -> actualiza un archivo que ya se encuentren en el area de control de cambios
+git commit -> Va a abrir el editor de texto
+Guardamos todo lo que necesitamos siempre agregando # al principio de la linea
+
+git log -> Registro de los cambios en el repositorio
+git log --oneline -> registro de los cambios en formato reducido
+git checkout 8287de9 -> git checkout /numero de posicion del log --oneline -> nos muestra cómo se evie el proyecto en ese momento.
+git log --oneline --all -> nos muestra todas las referencias (por si consultamos una referencia anterior)
+git checout main -> volvemos a la ultima version
+
+git blame index.html -> nos da un registro de que usuario modifico las lineas de codigo.
+git diff HEAD -> compara el registro de cambios a nivel historial. Si hubo cambios, nos muestra 
+		lo que está igual y qu'e cambió en colores
+
+
+consola vim
+:wq - guardar y salir
+:qa - quitar y cancelar
+:! - forzado Cancelar todo
