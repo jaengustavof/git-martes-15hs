@@ -1,4 +1,4 @@
-Clase 1 - 1.03.27
+Clase 2 - 39.21
 
 
 GIT es un grafo dirigido aciclico
@@ -22,9 +22,11 @@ clear - limpua
 cd documents/ -abre carpeta document
 cd .. - sale de la carpeta
 dir -muestra los directorios
-ls - muestra una lista de los archivos con colores para difegrencia su tipo
+	ls - muestra una lista de los archivos con colores para difegrencia su tipo
 mkdir - crea carpeta desde la consola
+****** PARA INICIAR EL REPOSITORIO HAY QUE BORRAR LA CARPETA ******
 rm -rf .git -> elimina la carpeta .git (remove /read and Force/ nombre carpeta)
+****** PARA INICIAR EL REPOSITORIO HAY QUE BORRAR LA CARPETA ******
 
 git init - Inicia un repositorio
 git status - muestra el estado del repositorio	
@@ -41,9 +43,19 @@ Una vez tengamos todos lo anterior configurado podremos utilizar el commit
 vim - comando para el editor de texto de git
 vim index.html - crea el archivo index o abre el archivo index
 git add -> captura el codigo que hayamos trabajado al mmomento
+git add . -> Agrega todo lo que haya sido modificado
 git commit -a -> actualiza un archivo que ya se encuentren en el area de control de cambios
-git commit -> Va a abrir el editor de texto
-Guardamos todo lo que necesitamos siempre agregando # al principio de la linea
+git commit -> Va a abrir el editor de texto / Guardamos todo lo que necesitamos siempre agregando # al principio de la linea
+git commit -m "Mensaje" -> Escribe un mensaje
+git commit -am "Mensaje"-> agrego y confirmo
+git commit --amend -> para modificar algo del commit
+git commit --amend -m -> Para editar el mensaje
+git commit --amend -am -> Realizar un arreglo y editar el mensaje
+
+
+git remote add IT https://github.com/jaengustavof/git-martes-15hs -> Agrega un repositorio remoto con NOMBRE IT y la direccion http que ponemos
+git push -u IT main -> hacemos seguimiento de lo que tenemos en el remoto IT // Subimos la rama main
+
 
 git log -> Registro de los cambios en el repositorio
 git log --oneline -> registro de los cambios en formato reducido
@@ -54,7 +66,14 @@ git checout main -> volvemos a la ultima version
 git blame index.html -> nos da un registro de que usuario modifico las lineas de codigo.
 git diff HEAD -> compara el registro de cambios a nivel historial. Si hubo cambios, nos muestra 
 		lo que está igual y qu'e cambió en colores
+git diff HEAD^^ -> Es el ancestro o sea un commit anterior. ^^ serian
+			dos anteriores.
+git diff HEAD~2 -> Es lo mismo que lo anterior.
 
+CLONAR 
+$ git clone https://github.com/C215714N/git-martes-15hs GITM15 -> clonamos el repositorio github y lo copiamos a una nueva carpeta llamada GITM15 
+
+/c215714n/git-martes-15hs
 
 consola vim
 :wq - guardar y salir
