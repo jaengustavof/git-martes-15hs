@@ -52,10 +52,8 @@ git commit --amend -> para modificar algo del commit
 git commit --amend -m -> Para editar el mensaje
 git commit --amend -am -> Realizar un arreglo y editar el mensaje
 
-
 git remote add IT https://github.com/jaengustavof/git-martes-15hs -> Agrega un repositorio remoto con NOMBRE IT y la direccion http que ponemos
 git push -u IT main -> hacemos seguimiento de lo que tenemos en el remoto IT // Subimos la rama main
-
 
 git log -> Registro de los cambios en el repositorio
 git log --oneline -> registro de los cambios en formato reducido
@@ -72,6 +70,15 @@ git diff HEAD~2 -> Es lo mismo que lo anterior.
 
 CLONAR 
 $ git clone https://github.com/C215714N/git-martes-15hs GITM15 -> clonamos el repositorio github y lo copiamos a una nueva carpeta llamada GITM15 
+git fetch origin(nombre del remote) -> trae el historial clase 2 - 1.05.40
+git pull origin(nombre del remote) -> fusiona los cambios del remoto y el original clase 2 - 1.05.40
+
+
+HELP
+git commit --help   -> Abre la pagina con todos los comandos git
+git commit --?      -> lo mismo que arriba pero reducido
+git add --?
+
 
 /c215714n/git-martes-15hs
 

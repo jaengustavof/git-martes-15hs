@@ -28,6 +28,35 @@
 			<h3>Staging Area (INDEX)</h3>
 			<p>El area de control de cambios corresponde al archivo que <em>se encuentra en la carpeta .git</em> que se crea al iniciar un repositorio. Aqui se registran los archivos a los que vamos a hacerle seguimiento y es el punto de comparacion para confirmar dichis cambios. Es necesario agregar los archivos con los que estemos trabajando a dicha area para avanzar con el historial de cambios, ya que git al utilizar el comandos <strong>git add</strong>realiza una captura de pantalla.
 			</p>
+			<ul class="list">
+				<li><strong>git status</strong>
+					<p>compara el Working Directory con el contenido del Staging Area (index) y mustra en pantalla el estado de los archovos del Working Directory.</p>
+					<ul>
+						<li><strong>untraked</strong>
+							<p>El archivo no se encuentra en el index. Por lo tanto no se le está haciendo seguimiento.</p>
+						</li>
+						<li><strong>tracked</strong>
+							<p>Los archivos / cambios fueron agregados al Index y están listos para ser confirmados.</p>
+						</li>
+						<li><strong>modified</strong>
+							<p>El archivo que se encuentre en el Working Directory difiere con los cambios almacenados en el Index.</p>
+						</li>
+						<li><strong>commited</strong>
+							<p>Los cambios fuern confirmados y almacenados en el repositorio.</p>
+						</li>
+
+					</ul>
+				</li>
+				<li><strong>git add &lt;file></strong>
+					<p>Agrega en el index los cambios/archivos especificados, para agregar todo el contenido de un directorio podemos utilizar el comando <em>git add .</em></p>
+				</li>
+				<li><strong>git restore &lt;file></strong>
+					<p>Restblece los cambios en el working directory, a la ultima version confirmada del archivo.</p>
+				</li>
+				<li><strong>git reset &lt;file> --cached</strong>
+					<p>Quita del index el archivo seleccionado, pero mantiene la copia en el working directory.</p>
+				</li>
+			</ul>		
 		</article>
 		<article>
 			<h3>Repository (Local/Remote)</h3>
