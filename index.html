@@ -61,6 +61,20 @@
 		<article>
 			<h3>Repository (Local/Remote)</h3>
 			<p>El repositorio corresponde a la base  de datod donde se almacenan los cambios en formato <strong>BLOB(Binary Object File)</strong> y es el lugar al que podemos acceder cada vez que necesitemos revisar un estado anterior de nuestro proyecto. Esto es posible gracias de los <em> commits</em> identificados mediante un numero de HASH.</p>
+			<ul class="list">
+				<li><strong>git commit</strong>
+					<p>Abre el editor de codigo predeterminado para una confirmacion de cambios. Podemos utilizar comandos como <em>git commit -am "msg"</em> para agregar al index los cambios de los archivos con seguimiento al index y generar un mensaje de commit.</p>
+				</li>
+				<li><strong>git diff &lt;commit></strong>
+					<p>compara el working directory con la referencia especificada, esta puede ser relativa <em>HEAD^(ansestro) o HEAD~2(anteriores)</em> o absoluta utiliazndo el HASH</p>
+				</li>
+				<li><strong>git blame &lt;file></strong>
+					<p>Muestra el archivos seleccionao con el nombre de usuario, fecha y hora en las que se realizaron modificaciones en el mismo. En caso de haber cambios sin confirmacion muestra la leyenda <em>Not Comit Yet</em></p>
+				</li>
+				<li><strong>git checkout &lt;commit></strong>
+					<p>Permite que naveguemos en el historial de cambios para ver las versiones de nuestro proyecto.</p>
+				</li>
+			</ul>
 		</article>
 	</section>
 </body>
