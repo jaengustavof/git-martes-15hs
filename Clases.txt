@@ -27,6 +27,10 @@ mkdir - crea carpeta desde la consola
 ****** PARA INICIAR EL REPOSITORIO HAY QUE BORRAR LA CARPETA ******
 rm -rf .git -> elimina la carpeta .git (remove /read and Force/ nombre carpeta)
 ****** PARA INICIAR EL REPOSITORIO HAY QUE BORRAR LA CARPETA ******
+touch styles/main.css crea el archivo main.css en la carpeta styles
+
+
+
 
 git init - Inicia un repositorio
 git status - muestra el estado del repositorio	
@@ -71,7 +75,7 @@ git diff HEAD~2 -> Es lo mismo que lo anterior.
 CLONAR 
 $ git clone https://github.com/C215714N/git-martes-15hs GITM15 -> clonamos el repositorio github y lo copiamos a una nueva carpeta llamada GITM15 
 git fetch origin(nombre del remote) -> trae el historial clase 2 - 1.05.40
-git pull origin(nombre del remote) -> fusiona los cambios del remoto y el original clase 2 - 1.05.40
+git pull origin(nombre del remote) -> fusiona los cambios del remoto y el original 
 
 
 HELP
