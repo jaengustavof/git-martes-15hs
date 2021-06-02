@@ -1,4 +1,4 @@
-Clase 2 - 39.21
+Clase 2 - 1.38.57
 
 
 GIT es un grafo dirigido aciclico
