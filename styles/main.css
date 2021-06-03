@@ -26,8 +26,29 @@ nav a{
     text-decoration: none;
 }
 
+.button {
+    margin: .5rem;
+    border: .1rem solid #eee;
+    color: #eee;
+    background-color: transparent;
+}
+
+.button:hover{
+    color: #224;
+    background-color: #eee;
+}
+
 .menu {
     width: 100%;
     list-style-type: none;
     padding: 0;
+    display: none;
+}
+
+.menu a:hover{
+    background-color: rgba(51,51,51,.5);
+}
+
+.menu.active {
+    display: block;
 }
