@@ -58,6 +58,7 @@ git commit --amend -am -> Realizar un arreglo y editar el mensaje
 
 git remote add IT https://github.com/jaengustavof/git-martes-15hs -> Agrega un repositorio remoto con NOMBRE IT y la direccion http que ponemos
 git push -u IT main -> hacemos seguimiento de lo que tenemos en el remoto IT // Subimos la rama main
+git push -u IT mobile-first -> Sube la rama MOBILE FIRST
 
 git log -> Registro de los cambios en el repositorio
 git log --oneline -> registro de los cambios en formato reducido
@@ -83,6 +84,9 @@ git commit --help   -> Abre la pagina con todos los comandos git
 git commit --?      -> lo mismo que arriba pero reducido
 git add --?
 
+
+CREAR RAMAS
+git checkout mobile-first -> Crea la rama mobile-first. Podemos trabajar en dos versiones o mas al mismo tiempo y ralizar distintas modificaciones en cada rama.	
 
 /c215714n/git-martes-15hs
 
