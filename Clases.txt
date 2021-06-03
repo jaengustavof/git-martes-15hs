@@ -86,7 +86,13 @@ git add --?
 
 
 CREAR RAMAS
+git branch -> Nos muestr las ramas de nuestro proyecto
+git branch mobile-first -> Creamos la rama mobile-first
 git checkout mobile-first -> Crea la rama mobile-first. Podemos trabajar en dos versiones o mas al mismo tiempo y ralizar distintas modificaciones en cada rama.	
+git merge mobile-first -> traemos el codigo de la rama mobile-first a nuestro proyecto. Siempre debemos estar parados sobre la rama en donde queremos traer los cambios.
+git merge --abort -> Cancela el merge
+$ git merge --continue -> continua con un merge anterior que haya dado problema
+
 
 /c215714n/git-martes-15hs
 
