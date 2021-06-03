@@ -1,0 +1,17 @@
+
+/*Navigation bar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: 
+        #448
+        linear-gradient(#36c,#224);
+}
+
+.menu {
+    width: 100%;
+}
+
+/*Responsive*/
