@@ -1,17 +1,30 @@
-
+/*General Rules*/
+*{
+    box-sizing: border-box;
+    font-family: 'segoe ui', 'Calibri', sans-serif;
+}
+body{
+    margin: 0;
+}
 /*Navigation bar*/
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background: 
-        #448
-        linear-gradient(#36c,#224);
+
+nav{
+    background-color: #448;
 }
 
-.menu {
-    width: 100%;
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: .5rem;
+    color: #eee;
+    text-decoration: none;
 }
 
 /*Responsive*/
