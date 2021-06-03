@@ -1,0 +1,33 @@
+/*General Rules*/
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body, h1, h2, h3, .menu {
+    margin: 0;
+}
+/*Navigation Bar*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: 
+        #448
+        linear-gradient(#36c, #224);
+}
+
+nav a{
+    display: block;
+    padding: .25rem.5rem;
+    color: #eee;
+    text-decoration: none;
+}
+
+.menu {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
